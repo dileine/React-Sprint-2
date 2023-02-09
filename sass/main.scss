@@ -1,0 +1,33 @@
+//custom Bootstrap
+
+$font-family-sans-serif:"Rubik", sans-serif;
+
+$primary: #5265e1;
+$secondary: #fa5959;
+
+
+// CSS
+
+body{
+    overflow-x: hidden;
+}
+
+.blue-pill-right {
+	position: absolute;
+	z-index: -1;
+	width: 400%;
+	height: 75%;
+	top: 30%;
+	left: 30%;
+}
+
+//overwriting CSS
+
+.navbar-nav .nav-item .nav-link{
+    font-size: 0.65rem;
+    letter-spacing: 0.05rem;
+}
+
+
+//import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

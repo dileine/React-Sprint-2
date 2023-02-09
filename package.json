@@ -1,0 +1,20 @@
+{
+  "name": "react-sprint-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dileine/React-Sprint-2.git"
+  },
+  "author": "Mar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dileine/React-Sprint-2/issues"
+  },
+  "homepage": "https://github.com/dileine/React-Sprint-2#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "sass": "^1.58.0"
+  }
+}
