@@ -22,7 +22,7 @@
   <body>
     <header>
       <div class="container-xl">
-        <!-- navbar fixed top-->
+        <!-- navbar fixed-->
         <nav
           class="fixed-top navbar navbar-expand-lg bg-body px-3 px-lg-0 pt-4 pt-lg-5 pb-3"
         >
@@ -35,18 +35,19 @@
                 class="d-inline-block align-text-top"
               />
             </a>
-            <!-- navbar menu for mobile-->
+            <!-- navbar for mobile-->
             <button
               class="navbar-toggler border-0"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <img src="./assets/img/icon-hamburger.svg" alt="hamburger menu" />
             </button>
+            <!-- menu -->
             <div class="collapse navbar-collapse">
               <ul
                 class="navbar-nav ms-lg-auto mb-2 mb-lg-0 pe-lg-5 me-lg-4 text-uppercase align-items-center"
@@ -55,7 +56,7 @@
                   <a
                     class="nav-link mx-2 text-dark"
                     aria-current="page"
-                    href="#"
+                    href="#features"
                     >Features</a
                   >
                 </li>
@@ -84,12 +85,15 @@
         </nav>
       </div>
     </header>
+
     <main>
-      <!-- grid responsive -->
+      <!-- Home Page section: grid responsive 2 columns -->
+
       <section class="container-xl mt-5">
         <div
           class="row justify-content-center align-items-center pt-5 mt-5 ms-lg-4"
         >
+          <!--column 1: description-->
           <div
             class="col-12 col-lg-6 order-2 order-lg-1 text-center text-lg-start mb-5 mb-lg-0"
           >
@@ -99,6 +103,7 @@
               Open a new browser tab and see your sites load instantly. Try it
               for free.
             </p>
+
             <div class="buttons">
               <button
                 type="button"
@@ -114,6 +119,8 @@
               </button>
             </div>
           </div>
+
+          <!-- column 2: illiustration-->
           <div
             class="col-12 col-lg-6 order-lg-2 mt-5 mb-5 mb-lg-0 text-center position-relative"
           >
@@ -125,6 +132,187 @@
             <div class="blue-pill-right rounded-pill bg-primary"></div>
           </div>
         </div>
+      </section>
+
+      <!-- Features section: grid responsive + tabs-->
+      <section class="container-xl mt-5" id="features">
+        <div class="row">
+          <div class="col-12 col-lg-6 m-auto text-center mt-5 px-1">
+            <h3>Features</h3>
+            <p
+              class="text-black-50 text-lg-center mb-4 mx-5 mx-lg-0 mt-2 mt-lg-4"
+            >
+              Our aim is to make it quick an easy for you to acces your
+              favourite websites. Your bookrmarks sync between your devices so
+              you can acces them on the go.
+            </p>
+          </div>
+        </div>
+
+        <!-- tabs-->
+        <nav class="row justify-content-center">
+          <ul
+            class="nav nav-tabs flex-column align-items-center flex-lg-row justify-content-between col-12 col-lg-7 p-lg-0"
+            id="navTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="w-100 nav-link active px-lg-4 py-3"
+                id="feature1-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#feature1"
+                type="button"
+                rol="tab"
+                aria-controls="feature1"
+                aria-selected="true"
+              >
+                Simple Bookmarking
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="w-100 nav-link px-lg-4 py-3"
+                id="feature2-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#feature2"
+                type="button"
+                rol="tab"
+                aria-controls="feature2"
+                aria-selected="false"
+              >
+                Speedy Searching
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="w-100 nav-link px-lg-4 py-3"
+                id="feature3-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#feature3"
+                type="button"
+                rol="tab"
+                aria-controls="feature3"
+                aria-selected="false"
+              >
+                Easy sharing
+              </button>
+            </li>
+          </ul>
+
+          <!-- tab content-->
+          <div class="tab-content mt-5 pt-5 pt-lg-2 mb-5" id="tabContent">
+            <!-- Feature 1-->
+            <section
+              class="tab-pane fade show active"
+              id="feature1"
+              role="tabpanel"
+              aria-labelledby="feature1-tab"
+            >
+              <div class="row align-items-center">
+                <div
+                  class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
+                >
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/illustration-features-tab-1.svg"
+                    alt="features-1"
+                  />
+                  <div class="blue-pill-left rounded-pill bg-primary"></div>
+                </div>
+                <div
+                  class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
+                >
+                  <h3>Bookmark in one click</h3>
+                  <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
+                  >
+                    <span class="small">More info</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Feature 2-->
+            <section
+              class="tab-pane fade"
+              id="feature2"
+              role="tabpanel"
+              aria-labelledby="feature2-tab"
+            >
+              <div class="row align-items-center">
+                <div
+                  class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
+                >
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/illustration-features-tab-2.svg"
+                    alt="features-2"
+                  />
+                  <div class="blue-pill-left rounded-pill bg-primary"></div>
+                </div>
+                <div
+                  class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
+                >
+                  <h3>Intelligent search</h3>
+                  <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
+                    Our powerful search feature will hep you find saved sites in
+                    no time at all. No need to trawl through all of your
+                    bookmarks.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
+                  >
+                    <span class="small">More info</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <!-- Feature 3-->
+            <section
+              class="tab-pane fade"
+              id="feature3"
+              role="tabpanel"
+              aria-labelledby="feature3-tab"
+            >
+              <div class="row align-items-center">
+                <div
+                  class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
+                >
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/illustration-features-tab-3.svg"
+                    alt="features-3"
+                  />
+                  <div class="blue-pill-left rounded-pill bg-primary"></div>
+                </div>
+                <div
+                  class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
+                >
+                  <h3>Share your bookmarks</h3>
+                  <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
+                    Easily shrae your bookmarks and collections with other.
+                    Create a shareable link that you can send at the click of a
+                    button.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
+                  >
+                    <span class="small">More info</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </nav>
       </section>
     </main>
   </body>

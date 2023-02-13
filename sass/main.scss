@@ -21,6 +21,16 @@ body{
 	left: 30%;
 }
 
+.blue-pill-left {
+	position: absolute;
+	z-index: -1;
+	width: 400%;
+	height: 95%;
+	top: 23%;
+	right: 15%;
+}
+
+
 //overwriting CSS
 
 .navbar-nav .nav-item .nav-link{
@@ -28,6 +38,20 @@ body{
     letter-spacing: 0.05rem;
 }
 
+.nav-tabs .nav-item .nav-link.active{
+	color:#212529;
+	border-bottom: 3px solid $secondary;
+}
+
+.nav-tabs .nav-item .nav-link{
+	color:#6c757d;
+	border:none;
+}
+
+.nav .nav-item .nav-link{
+	letter-spacing: 0.1rem;
+	font-size: 0.80rem;
+}
 
 //import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
