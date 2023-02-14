@@ -89,7 +89,7 @@
     <main>
       <!-- Home Page section: grid responsive 2 columns -->
 
-      <section class="container-xl mt-5">
+      <section class="container-xl mt-5" id="homePage">
         <div
           class="row justify-content-center align-items-center pt-5 mt-5 ms-lg-4"
         >
@@ -199,121 +199,170 @@
               </button>
             </li>
           </ul>
-
-          <!-- tab content-->
-          <div class="tab-content mt-5 pt-5 pt-lg-2 mb-5" id="tabContent">
-            <!-- Feature 1-->
-            <section
-              class="tab-pane fade show active"
-              id="feature1"
-              role="tabpanel"
-              aria-labelledby="feature1-tab"
-            >
-              <div class="row align-items-center">
-                <div
-                  class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
-                >
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/illustration-features-tab-1.svg"
-                    alt="features-1"
-                  />
-                  <div class="blue-pill-left rounded-pill bg-primary"></div>
-                </div>
-                <div
-                  class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
-                >
-                  <h3>Bookmark in one click</h3>
-                  <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favourite sites.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
-                  >
-                    <span class="small">More info</span>
-                  </button>
-                </div>
-              </div>
-            </section>
-
-            <!-- Feature 2-->
-            <section
-              class="tab-pane fade"
-              id="feature2"
-              role="tabpanel"
-              aria-labelledby="feature2-tab"
-            >
-              <div class="row align-items-center">
-                <div
-                  class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
-                >
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/illustration-features-tab-2.svg"
-                    alt="features-2"
-                  />
-                  <div class="blue-pill-left rounded-pill bg-primary"></div>
-                </div>
-                <div
-                  class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
-                >
-                  <h3>Intelligent search</h3>
-                  <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
-                    Our powerful search feature will hep you find saved sites in
-                    no time at all. No need to trawl through all of your
-                    bookmarks.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
-                  >
-                    <span class="small">More info</span>
-                  </button>
-                </div>
-              </div>
-            </section>
-            <!-- Feature 3-->
-            <section
-              class="tab-pane fade"
-              id="feature3"
-              role="tabpanel"
-              aria-labelledby="feature3-tab"
-            >
-              <div class="row align-items-center">
-                <div
-                  class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
-                >
-                  <img
-                    class="img-fluid"
-                    src="./assets/img/illustration-features-tab-3.svg"
-                    alt="features-3"
-                  />
-                  <div class="blue-pill-left rounded-pill bg-primary"></div>
-                </div>
-                <div
-                  class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
-                >
-                  <h3>Share your bookmarks</h3>
-                  <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
-                    Easily shrae your bookmarks and collections with other.
-                    Create a shareable link that you can send at the click of a
-                    button.
-                  </p>
-                  <button
-                    type="button"
-                    class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
-                  >
-                    <span class="small">More info</span>
-                  </button>
-                </div>
-              </div>
-            </section>
-          </div>
         </nav>
+        <!-- tabs content-->
+        <div class="tab-content mt-5 pt-5 pt-lg-2 mb-5" id="tabContent">
+          <!-- Feature 1-->
+          <section
+            class="tab-pane fade show active"
+            id="feature1"
+            role="tabpanel"
+            aria-labelledby="feature1-tab"
+          >
+            <div class="row align-items-center">
+              <div
+                class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
+              >
+                <img
+                  class="img-fluid"
+                  src="./assets/img/illustration-features-tab-1.svg"
+                  alt="features-1"
+                />
+                <div class="blue-pill-left rounded-pill bg-primary"></div>
+              </div>
+              <div
+                class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
+              >
+                <h3>Bookmark in one click</h3>
+                <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
+                >
+                  <span class="small">More info</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Feature 2-->
+          <section
+            class="tab-pane fade"
+            id="feature2"
+            role="tabpanel"
+            aria-labelledby="feature2-tab"
+          >
+            <div class="row align-items-center">
+              <div
+                class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
+              >
+                <img
+                  class="img-fluid"
+                  src="./assets/img/illustration-features-tab-2.svg"
+                  alt="features-2"
+                />
+                <div class="blue-pill-left rounded-pill bg-primary"></div>
+              </div>
+              <div
+                class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
+              >
+                <h3>Intelligent search</h3>
+                <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
+                  Our powerful search feature will hep you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
+                >
+                  <span class="small">More info</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- Feature 3-->
+          <section
+            class="tab-pane fade"
+            id="feature3"
+            role="tabpanel"
+            aria-labelledby="feature3-tab"
+          >
+            <div class="row align-items-center">
+              <div
+                class="col-12 col-lg-6 mb-5 mg-lg-0 mt-2 mt-lg-0 px-4 text-center position-relative"
+              >
+                <img
+                  class="img-fluid"
+                  src="./assets/img/illustration-features-tab-3.svg"
+                  alt="features-3"
+                />
+                <div class="blue-pill-left rounded-pill bg-primary"></div>
+              </div>
+              <div
+                class="col-12 col-lg-6 text-center mt-5 mt-lg-0 text-lg-start ps-lg-5"
+              >
+                <h3>Share your bookmarks</h3>
+                <p class="text-black-50 mt-3 mb-4 mx-5 mx-lg-0 pe-lg-5">
+                  Easily shrae your bookmarks and collections with other. Create
+                  a shareable link that you can send at the click of a button.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary shadow-sm me-2 d-none d-lg-block border-2"
+                >
+                  <span class="small">More info</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
       </section>
+      <!--Cards section -->
+
+      <section class="container-xl mt-5 mt-lg-1" id="cardSection">
+        <div class="row">
+          <div class="col-12 col-lg-6 m-auto text-center mt-5 px-1">
+            <h3>Download the extension</h3>
+            <p
+              class="text-black-50 text-lg-center mb-4 mx-5 mx-lg-0 mt-2 mt-lg-4"
+            >
+              We've got more browsers in the pipeline. Please do let us know if
+              you've got a favourite you'd like us to prioritize.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 1 Chrome-->
+        <div class="col-md-4">
+          <div
+            class="card row flex-column flex-lg-row align-items-center align-items-lg-start text-center"
+          >
+            <div class="col-12 col-lg-3 mt-5 mx-2">
+              <div class="card shadow mx-auto rounded-3" style="width: 15rem">
+                <img
+                  src="./assets/img/logo-chrome.svg"
+                  class="card-img-top mt-5 img-size mx-auto"
+                  alt="logo Chrome"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Add to Chrome</h5>
+                  <p class="card-text mb-4 text-black-50">
+                    Minimum version 6.2
+                  </p>
+                  <img src="./assets/img/bg-dots.svg" class="w-100" />
+                  <a href="#" class="btn btn-primary mt-2 mb-2 px-4 py-2"
+                    ><span class="small">Add & Install Extension</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 Firefox-->
+        <!-- Card 3 Opera-->
+      </section>
+      <!-- FAQ's section: accordion component-->
     </main>
+    <footer>
+      <!--footer section: Bootstrap forms-->
+    </footer>
+
+    <!-- Bootstrap JavaScript-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
