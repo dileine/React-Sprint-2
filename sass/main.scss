@@ -8,8 +8,12 @@ $secondary: #fa5959;
 
 // CSS
 
+
+
 body{
     overflow-x: hidden;
+	
+	box-sizing: border-box;
 }
 
 .blue-pill-right {
@@ -29,6 +33,11 @@ body{
 	top: 23%;
 	right: 15%;
 }
+
+.card .img-size{
+	width: 35%;
+}
+
 
 
 //overwriting CSS
@@ -52,6 +61,8 @@ body{
 	letter-spacing: 0.1rem;
 	font-size: 0.80rem;
 }
+
+
 
 //import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
