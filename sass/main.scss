@@ -1,14 +1,18 @@
-//custom Bootstrap
+//custom Bootstrap font & colors
 
 $font-family-sans-serif:"Rubik", sans-serif;
 
 $primary: #5265e1;
 $secondary: #fa5959;
 
+//custom accordion button
 
+$accordion-button-icon: url('../assets/img/icon-arrow.svg');
+$accordion-button-active-icon: url('../assets/img/icon-arrow.svg');
+
+$accordion-button-active-color: #212529;
+$accordion-button-active-bg: #ffffff00;
 // CSS
-
-
 
 body{
     overflow-x: hidden;
